@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- CSP support mode (required for Windows Universal apps): https://docs.angularjs.org/api/ng/directive/ngCsp -->
+<html lang="en" ng-app="myApp" ng-csp>
+<head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- JS dependencies (order matters!) -->
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="js/myController.js"></script>
+
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-basic-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CSP support mode (required for Windows Universal apps) -->
+    <link rel="stylesheet" href="lib/angular/angular-csp.css" />
+
+
+    <!-- --------------- App init --------------- -->
+
+    <title>Itinerarios UQ</title>
+</head>
+
+<body ng-controller="myController as ctrl">
+
+    <script src="cordova.js"></script>
+    <script src="scripts/index.js"></script>
+
+    <!-- HOME LOGIN NAVIGATOR -->
+    <ons-navigator title="Navigator" var="myNavigator">
+    <ons-page>
+    <ons-toolbar>
+    <div class="center">Inicio de sesión</div>
+    <div class="right">
+        <ons-toolbar-button ng-click="ctrl.cerrarSesion()">Cerrar</ons-toolbar-button>
+    </div>
+</ons-toolbar>
+<div class="login-form">
+    <input type="text" ng-model="ctrl.usuario" class="text-input--underbar" placeholder="Usuario" value="">
+    <input type="password" ng-model="ctrl.password" class="text-input--underbar" placeholder="Contraseña" value="">
+    <br>
+    <br>
+    <ons-button modifier="large" class="login-button" ng-click="ctrl.iniciarSesion()">Iniciar sesión</ons-button>
+    <br>
+    <ons-button modifier="large--cta" class="login-button" ng-click="myNavigator.pushPage('registro-donante.html', { animation : 'slide' } );">Registrarse</ons-button>
+</div>
+</ons-page>
+</ons-navigator>
+
+<ons-template id="home.html">
+<ons-page>
+<ons-toolbar>
+<div class="center">Inicio de sesión</div>
+<div class="right">
+    <ons-toolbar-button ng-click="ctrl.cerrarSesion()">Cerrar</ons-toolbar-button>
+</div>
+</ons-toolbar>
+
+<div class="login-form">
+    <input type="text" ng-model="ctrl.usuario" class="text-input--underbar" placeholder="Usuario" value="">
+    <input type="password" ng-model="ctrl.password" class="text-input--underbar" placeholder="Contraseña" value="">
+    <br>
+    <br>
+    <ons-button modifier="large" class="login-button" ng-click="ctrl.iniciarSesion()">Iniciar sesión</ons-button>
+    <br>
+    <ons-button modifier="large--cta" class="login-button" ng-click="myNavigator.pushPage('registro-donante.html', { animation : 'slide' } );">Registrarse</ons-button>
+    <br>
+    <ons-button modifier="quiet" class="forgot-password" ng-click="ctrl.quienesSomos()">¿ Quienes somos ?</ons-button>
+</div>
+</ons-page>
+</ons-template>
+
+<ons-template id="fecha-itinerarios.html">
+<ons-page>
+<ons-toolbar>
+<div class="center">Fecha itinerario</div>
+<div class="right">
+    <ons-toolbar-button ng-click="ctrl.cerrarSesion()">Cerrar</ons-toolbar-button>
+</div>
+</ons-toolbar>
+
+<div class="login-form">
+	<h2>Indique la fecha del itinerario</h2>
+    <input type="date" ng-model="ctrl.fecha_itinerario" class="text-input--underbar" placeholder="Usuario" value="">
+    <br>
+    <br>
+    <ons-button modifier="large" class="login-button" ng-click="ctrl.verItinerario()">Ver itinerario</ons-button>
+</div>
+</ons-page>
+</ons-template>
+
+<ons-template id="verItinerario.html">
+<ons-page>
+<ons-toolbar>
+<div class="left">
+    <ons-back-button>Atrás</ons-back-button>
+</div>
+<div class="center">
+    Itinerario día: {{ctrl.fecha_itinerario}}
+</div>
+</ons-toolbar>
+
+<div class="login-form">
+<ons-row>
+<h3>Facultad:{{ctrl.facultad}}</h3>
+</ons-row>
+<ons-row>
+<h3>Responsable:{{ctrl.responsable}}</h3>
+</ons-row>
+<ons-row>
+<h3>Descripción:{{ctrl.descripcion}}</h3>
+</ons-row>
+<ons-row>
+<h3>Sitio salida:{{ctrl.sitio_salida}}</h3>
+</ons-row>
+<ons-row>
+<h3>Sitio llegada:{{ctrl.sitio_llegada}}</h3>
+</ons-row>
+<ons-row>
+<h3>Fecha salida:{{ctrl.fecha_salida}}</h3>
+</ons-row>
+<ons-row>
+<h3>Fecha llegada:{{ctrl.fecha_llegada}}</h3>
+</ons-row>
+<ons-row>
+<h3>Vehículo:{{ctrl.vehiculo}}</h3>
+</ons-row>
+<ons-row>
+<h3>Observaciones:{{ctrl.observaciones}}</h3>
+</ons-row>
+</div>
+</ons-page>
+</ons-template>
+</body>
+</html>

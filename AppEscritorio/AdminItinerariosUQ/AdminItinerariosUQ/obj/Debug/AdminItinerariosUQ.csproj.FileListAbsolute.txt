@@ -1,0 +1,14 @@
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\bin\Debug\AdminItinerariosUQ.exe.config
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\bin\Debug\AdminItinerariosUQ.exe
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\bin\Debug\AdminItinerariosUQ.pdb
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.csprojResolveAssemblyReference.cache
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.Configuracion.ConfiguracionFacultades.resources
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.Configuracion.ConfiguracionUsuarios.resources
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.Configuracion.ConfiguracionVehiculos.resources
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.Itinerario.Itinerario.resources
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.Login.resources
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.MenuPrincipal.MenuPrincipal.resources
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.Properties.Resources.resources
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.csproj.GenerateResource.Cache
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.exe
+C:\Users\andresfelipe\Documents\Visual Studio 2013\Projects\AdminItinerariosUQ\AdminItinerariosUQ\obj\Debug\AdminItinerariosUQ.pdb
